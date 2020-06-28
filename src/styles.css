@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+#navbarhero {
+	background: url('https://images.pexels.com/photos/319893/pexels-photo-319893.jpeg') 
+	no-repeat center center;
+	height: 70%;
+}
+
+.jumbotron {
+	background: rgba(0,0,0,0);
+}
