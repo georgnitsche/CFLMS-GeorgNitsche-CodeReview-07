@@ -1,12 +1,10 @@
-<div class="container marketing mx-auto">
-    <div class="row container mx-auto">
-
-    <div *ngFor="let destinations of destinations"  class="card col-lg-4 col-xs-12 col-md-6 pr-2 pl-2 pb-2 pt-2" >
-    <img class="fotos" src="{{destinations.img}}" alt="Image paradise">
-    
-    <!--<p>{{destinations.date}} {{destinations.time}}</p>-->
-    <h2>{{destinations.name}}</h2> <p> {{destinations.shortDescr}}</p>
-    <p class="badge badge-primary pt-3 pb-3">Read more</p>
-
-</div>
-</div>
+<div class="card-group">
+  <div *ngFor="let destinations of destinations" class="card">
+    <img class="card-img-top" src="{{destinations.img}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">{{destinations.name}}</p>
+      <p class="card-text"><p> {{destinations.shortDescr}}</p>
+    </div>
+  </div>
+  

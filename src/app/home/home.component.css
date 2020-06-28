@@ -1,7 +1,7 @@
-img {
-	object-fit: none;
+.card-img-top {
+	height: 50%;
 }
 
-.imagediv {
-	height: 50%;
+.card-img-top {
+	object-fit: cover;
 }
