@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   constructor() { 
-  this.projectName="travelagency"
 }
 
   ngOnInit(): void {

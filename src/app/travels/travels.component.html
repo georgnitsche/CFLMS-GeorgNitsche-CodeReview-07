@@ -1,1 +1,11 @@
-<p>travels works!</p>
+<div class="card-group">
+  <div *ngFor="let travels of travels" class="card">
+    <img class="card-img-top" src="{{travels.img}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">{{travels.name}}</p>
+      <p class="card-text"> {{travels.shortDescr}}</p>
+    </div>
+  </div>
+</div>
+  

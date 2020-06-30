@@ -9,10 +9,6 @@ import { Time } from '@angular/common';
 })
 export class HomeComponent implements OnInit {
 
-   name : string = "";
-   text : string = "";
-    
-
   // model : string = "";
   // ps: number;
   // year: number;
