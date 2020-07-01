@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Timestamp } from 'rxjs';
 import { Time } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'travels',
