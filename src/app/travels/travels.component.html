@@ -8,16 +8,18 @@
       <th scope="col">Startdate</th>
       <th scope="col">Duration</th>
       <th scope="col">Price</th>
+      <th scope="col">Link</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let travels of travels" class="table">
-      <th scope="row">{{travels.number}}</th>
+    <tr *ngFor="let travels of travels; index ad travelsId" class="table">
+      <th scope="row">{{travels.id}}</th>
       <td>{{travels.destination}}</td>
       <td>{{travels.description}}</td>
       <td>{{travels.startdate}}</td>
       <td>{{travels.duration}}</td>
       <td>{{travels.price}}</td>
+      <td><a [routerLink]="['/travels',travels.Id]">{{travels.destination}}</a></td>
     </tr>
   </tbody>
 </table>
