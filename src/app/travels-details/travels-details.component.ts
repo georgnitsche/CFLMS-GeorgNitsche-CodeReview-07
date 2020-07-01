@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { travels } from './../travels';
 
 @Component({
   selector: 'app-travels-details',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./travels-details.component.css']
 })
 export class TravelsDetailsComponent implements OnInit {
+	travels;
+  constructor(private route: ActivatedRoute) { }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit() {
+  	this.route.paramMap.subscribe(params => {
+  		this.travels = travels[+params.get('travelsId')];
+  	});
+  	
   }
 
 }
