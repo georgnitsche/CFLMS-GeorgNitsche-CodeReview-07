@@ -11,34 +11,37 @@ export class TravelsComponent implements OnInit {
 
 
 
- name : string = "";
- date : string = "";
- time :	string = "";
- shortDescr: string = "";
- img: string = "";
+ destination : string = "";
+ description : string = "";
+ startdate :	string = "";
+ duration: string = "";
+ price: string = "";
   // ps: number;
   // year: number;
 
   travels = [
     {
-      name: "Rio de Janeiro",
-      date: "01/16/2016",
-      time: "16:00:00",
-      shortDescr: "Rio de Janeiro",
-      img: "https://cdn.pixabay.com/photo/2012/07/03/22/55/rio-de-janeiro-51320_1280.jpg"
+      number: "1",
+      destination: "Rio de Janeiro",
+      description: "Rio de Janeiro",
+      startdate: "01/16/2016",
+      duration: "7",
+      price: "500",
     },{
-      name: "Cataratas de Iguazu",
-      date: "21.2.2016",
-      time: "16:00:00",
-      shortDescr: "Cataratas de Iguazu",
-      img: "https://cdn.pixabay.com/photo/2020/04/13/22/23/waterfall-5040217_1280.jpg"
+      number: "2",
+      destination: "Cataratas de Iguazu",
+      description: "Cataratas de Iguazu",
+      startdate: "21.2.2016",
+      duration: "10",
+      price: "700",
     },{
-    name: "Machu Picchu",
-    date: "21.2.2014",
-    time: "16:00:00",
-    shortDescr: "Machu Picchu",
-    img: "https://cdn.pixabay.com/photo/2014/03/30/23/07/mountain-301715_1280.jpg"
-    }
+      number: "3",
+    destination: "Machu Picchu",
+    description: "Machu Picchu",
+    startdate: "21.2.2014",
+    duration: "15",
+    price: "1000", 
+        }
   ]
   constructor() { }
 

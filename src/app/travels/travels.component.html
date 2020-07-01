@@ -1,11 +1,26 @@
-<div class="card-group">
-  <div *ngFor="let travels of travels" class="card">
-    <img class="card-img-top" src="{{travels.img}}" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">{{travels.name}}</p>
-      <p class="card-text"> {{travels.shortDescr}}</p>
-    </div>
-  </div>
-</div>
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Destination</th>
+      <th scope="col">Description</th>
+      <th scope="col">Startdate</th>
+      <th scope="col">Duration</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let travels of travels" class="table">
+      <th scope="row">{{travels.number}}</th>
+      <td>{{travels.destination}}</td>
+      <td>{{travels.description}}</td>
+      <td>{{travels.startdate}}</td>
+      <td>{{travels.duration}}</td>
+      <td>{{travels.price}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
   
